@@ -4,6 +4,7 @@ from django.db import models
 class DigitalForensicHub(models.Model):
     name = models.CharField(max_length=50)
     submissions_authorised = models.IntegerField(default=0)
+    submissions_pending = models.IntegerField(default=0)
     submissions_processing = models.IntegerField(default=0)
     submissions_holding = models.IntegerField(default=0)
     submissions_completed = models.IntegerField(default=0)
